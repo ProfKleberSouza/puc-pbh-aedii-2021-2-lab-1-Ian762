@@ -2,17 +2,13 @@
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
-  
+char string[1000];
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%[^\n]", string);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  numero_vogais(string);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  
 
   return(0);
 }

@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include "functions.h"
 
+
 int main() {
+int n;
 
-    int a, b, s;
+scanf("%i ", &n);
+int v[n];
+int i;
+int res; 
+    // preenche o vetor
+    for (i = 0; i < n; i++){
+        scanf ("%i", &v[i]);
+    }
+    
+    
+    // SAIDA - IMPRIMINDO O RESULTADO
+    res = menor(v, n);
+    printf("MENOR = %i", res);
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
   return(0);
 }
